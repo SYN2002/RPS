@@ -59,5 +59,5 @@ start.addEventListener('click', () => {
 			win.innerHTML = 'YOU WIN';
 		else
 			win.innerHTML = 'COMPUTER WIN';
-	}, 5000);
+	}, 5100);
 })
