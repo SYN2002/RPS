@@ -5,12 +5,12 @@ const win = document.getElementById('win');
 const box1 = document.getElementById('boxone');
 
 const imagePaths = [
-	'image1.png', //R->0
-	'image2.png', //P->1
-	'image3.png', //S->2
-	'image11.png',//R->3
-	'image22.png',//P->4
-	'image33.png',//S->5
+	'/RPS/Images/image1.png', //R->0
+	'/RPS/Images/image2.png', //P->1
+	'/RPS/Images/image3.png', //S->2
+	'/RPS/Images/image11.png',//R->3
+	'/RPS/Images/image22.png',//P->4
+	'/RPS/Images/image33.png',//S->5
 ];
 
 function fetchImages(eo, n, Animation) {

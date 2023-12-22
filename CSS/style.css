@@ -85,16 +85,16 @@ body{
   
   @keyframes animateLoader1 {
     0% {
-      background-image: url('image1.png'); 
+      background-image: url('/RPS/Images/image1.png'); 
     }
     33.33% {
-      background-image: url('image2.png'); 
+      background-image: url('/RPS/Images/image2.png'); 
     }
     66.66% {
-      background-image: url('image3.png');
+      background-image: url('/RPS/Images/image3.png');
     }
     100% {
-      background-image: url('image1.png');
+      background-image: url('/RPS/Images/image1.png');
     }
 }
 #boxtwo::before {
@@ -110,16 +110,16 @@ body{
   }
     @keyframes animateLoader2 {
         0% {
-          background-image: url('image11.png'); /* Replace 'image1.png' with your first image */
+          background-image: url('/RPS/Images/image11.png'); 
         }
         33.33% {
-          background-image: url('image22.png'); /* Replace 'image2.png' with your second image */
+          background-image: url('/RPS/Images/image22.png'); 
         }
         66.66% {
-          background-image: url('image33.png'); /* Replace 'image3.png' with your third image */
+          background-image: url('/RPS/Images/image33.png'); 
         }
         100% {
-          background-image: url('image11.png'); /* Back to the first image */
+          background-image: url('/RPS/Images/image11.png'); 
         }
   }
 
