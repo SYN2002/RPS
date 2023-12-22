@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #212121;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: lightgreen;
+}
+
+#pone{
+    background: #daba2f;
+    color: #212121;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    border: 2px solid black;
+    border-radius: 5px;
+	padding: 20px 20px;
+}
+
+#boxone{
+    height: 500px;
+    width: 500px;
+    position: relative;
+    overflow: hidden;
+    right: 10%;
+}
+
+#boxone img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    background-size: cover;
+}
+
+#ptwo{
+    background: #daba2f;
+    color: #212121;
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    border: 2px solid black;
+    border-radius: 5px;
+	padding: 20px 20px;
+}
+
+#boxtwo{
+    height: 500px;
+    width: 500px;
+    position: relative;
+    overflow: hidden;
+    left: 10%;
+  }
+  
+  #boxtwo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    background-size: cover;
+}
+
+#boxone::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    /* background-image: url('image1.png');  */
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* animation: animateLoader1 0.5s linear infinite; */
+  }
+  
+  @keyframes animateLoader1 {
+    0% {
+      background-image: url('image1.png'); 
+    }
+    33.33% {
+      background-image: url('image2.png'); 
+    }
+    66.66% {
+      background-image: url('image3.png');
+    }
+    100% {
+      background-image: url('image1.png');
+    }
+}
+#boxtwo::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    /* background-image: url('image11.png'); */
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* animation: animateLoader2 0.5s linear infinite;  */
+  }
+    @keyframes animateLoader2 {
+        0% {
+          background-image: url('image11.png'); /* Replace 'image1.png' with your first image */
+        }
+        33.33% {
+          background-image: url('image22.png'); /* Replace 'image2.png' with your second image */
+        }
+        66.66% {
+          background-image: url('image33.png'); /* Replace 'image3.png' with your third image */
+        }
+        100% {
+          background-image: url('image11.png'); /* Back to the first image */
+        }
+  }
+
+#verses{
+    position: absolute;
+}
+
+#st{
+    position: absolute;
+    bottom: 20%;
+    padding: 20px 40px;
+    background-color: #daba2f;
+    border-radius: 5px;
+}
+
+#st:hover{
+    background-color: aquamarine;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+#win{
+    position: absolute;
+    top: 25%;
+    background-color: #daba2f;
+    border-radius: 5px;
+}
