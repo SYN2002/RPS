@@ -3,6 +3,10 @@ const ione = document.getElementById('ione');
 const itwo = document.getElementById('itwo');
 const win = document.getElementById('win');
 const box1 = document.getElementById('boxone');
+const you=document.querySelector('.you');
+const computer=document.querySelector('.comp');
+
+let youScore=0,compScore=0;
 
 const imagePaths = [
 	'/RPS/Images/image1.png', //R->0
@@ -55,9 +59,13 @@ start.addEventListener('click', () => {
 		win.style.padding = '30px 60px'
 		if (p2 - p1 == 3)
 			win.innerHTML = 'DRAW';
-		else if ((p1 == 0 && p2 == 5) || (p1 == 1 && p2 == 3) || (p1 == 2 && p2 == 4))
+		else if ((p1 == 0 && p2 == 5) || (p1 == 1 && p2 == 3) || (p1 == 2 && p2 == 4)){
 			win.innerHTML = 'YOU WIN';
-		else
+			you.innerHTML=++youScore;
+		}
+		else{
 			win.innerHTML = 'COMPUTER WIN';
+			computer.innerHTML=++compScore;
+		}
 	}, 5100);
 })
