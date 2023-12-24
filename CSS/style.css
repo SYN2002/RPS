@@ -36,7 +36,7 @@ body {
 	left: 22%;
 	text-align: center;
 	padding: 22px 22px;
-	font-size: large;
+	font-size: larger;
 	font-style: italic;
 }
 
@@ -45,6 +45,7 @@ body {
 	background-color: #da402f;
 	top: 22%;
 	right: 25%;
+	font-size: larger;
 	text-align: center;
 	padding: 20px 20px;
 	font-style: italic;
@@ -168,6 +169,7 @@ body {
 #st:hover {
 	background-color: aquamarine;
 	cursor: pointer;
+	font-size: larger;
 	transition: all .5s;
 }
 

@@ -42,7 +42,6 @@ function fetchImages(eo, n, Animation) {
 
 function startStopAnimation(eo, Animation) {
 	eo.style.animation = `${Animation} .3s linear infinite`;
-
 	setTimeout(() => {
 		eo.style.animation = 'none';
 	}, 5000);
@@ -50,6 +49,7 @@ function startStopAnimation(eo, Animation) {
 
 start.addEventListener('click', () => {
 	// ione.src='none';
+	ione.innerHTML='';
 	win.style.padding = '0 0';
 	win.innerHTML = '';
 	const p1 = fetchImages(ione, 3, 'animateLoader1');
